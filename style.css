@@ -77,10 +77,17 @@ body {
   }
   
   .fade-in {
-    animation: fadeIn 2s ease-in;
+    animation: fadeIn 1s ease-in;
   }
   
   .slide-in {
-    animation: slideIn 1.5s ease-in-out;
+    animation: slideIn 0.75s ease-in-out;
   }
+
+  #about p {
+    max-width: 600px; /* Adjust as needed */
+    line-height: 1.6; /* Increases readability */
+    word-wrap: break-word;
+  }
+
   
