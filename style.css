@@ -1,93 +1,34 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f9f9f9;
-    overflow-x: hidden;
-  }
-  
-  header {
+/* About Me Section */
+#about {
     text-align: center;
     padding: 50px 20px;
-    background-color: #4CAF50;
+    background: linear-gradient(135deg, #4CAF50, #2e7d32);
     color: white;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 20px 0;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #4CAF50;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin: 40px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#about h2 {
+    font-size: 2rem;
     font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #2e7d32;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
-  
-  h2 {
-    color: #4CAF50;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes slideIn {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
-  
-  .fade-in {
-    animation: fadeIn 1s ease-in;
-  }
-  
-  .slide-in {
-    animation: slideIn 0.75s ease-in-out;
-  }
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
 
-  #about p {
-    max-width: 600px; /* Adjust as needed */
-    line-height: 1.6; /* Increases readability */
-    word-wrap: break-word;
-  }
-
-  
+#about p {
+    font-size: 1.1rem;
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+    opacity: 0.9;
+}
